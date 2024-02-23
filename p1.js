@@ -1,5 +1,5 @@
 function palindrome(str) {
-  let x = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let x = str.toLowerCase();
   let y = x.split("").reverse().join("");
   if (x === y) {
     return "String is a palindrome";
@@ -8,3 +8,4 @@ function palindrome(str) {
   }
 }
 console.log(palindrome("lived devil"));
+console.log(palindrome("game"));
